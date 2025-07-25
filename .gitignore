@@ -37,9 +37,3 @@ yarn-error.*
 .idea/
 *.iml
 
-# === Images / Misc (optional) ===
-*.png
-*.jpg
-*.jpeg
-*.svg
-screenshots/
