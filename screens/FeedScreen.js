@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Animated,
   SafeAreaView,
+  Platform,
 } from 'react-native';
 import { api } from '../services/api';
 import PostCard from '../components/PostCard';
@@ -206,7 +207,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   contentContainer: {
-    paddingTop: 0,
+    paddingTop: Platform.OS === 'android' ? 20 : 0, // Adjust for header height
     paddingBottom: 90,
   },
   loader: {
